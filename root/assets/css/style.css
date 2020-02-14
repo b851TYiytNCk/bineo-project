@@ -1,0 +1,1294 @@
+@font-face {
+    font-family: 'Comfortaa';
+    font-display: fallback;
+    src: url(fonts/new-comfortaa/Comfortaa-Regular.ttf) format("truetype"), url(fonts/new-comfortaa/Comfortaa-Bold.ttf) format("truetype"), url(fonts/new-comfortaa/Comfortaa-Light.ttf) format("truetype");
+}
+html {
+    font-size: 16px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', Arial, Helvetica, sans-serif;
+    background-color: #fff;
+}
+.logo {
+    float: left;
+    clear: both;
+    padding: 30px 0 0 30px;
+}
+.logo img {
+    width: 486px;
+    height: 270px;
+}
+.flex-container-1 {
+	display: flex;
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+	flex-direction: column;
+	float: right;
+	margin-top: 80px;
+}
+.flex-container-1 h1 {
+    font-size: 2.4rem;
+    color: #133f1e;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+.flex-container-2 {
+    display: flex;
+    width: 100%;
+    height: 700px;
+    margin: 0 auto 0 30px;
+    background-color: #fff;
+}
+.flex-2-left {
+    width: 500px;
+    height: 300px;
+    float: left;
+    background: #fff;
+    margin-top: 130px;
+}
+.flex-2-right {
+    float: right;
+    background: #579D57;
+    height: 600px;
+    width: 72%;
+}
+.flex-2-right p {
+    text-align: left;
+    color: #fff;
+    padding: 8% 15%;
+    font-size: 1.4rem;
+    font-weight: 300;
+    
+}
+
+/* начало правил слайдера 1 (картинки с би-нео)*/
+
+#block-for-slider {
+    width: 500px;
+    height: 300px;
+    margin: 0;
+}
+
+#viewport {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    text-align: center;
+}
+
+#slidewrapper {
+    position: relative;
+    width: calc(100% * 4);
+    -webkit-transition: 2s ease;
+    -o-transition: 2s ease;
+    transition: 2s ease;
+    -webkit-transition-timing-function: cubic-bezier(.67,.01,.23,1);
+    -o-transition-timing-function: cubic-bezier(.67,.01,.23,1);
+    transition-timing-function: cubic-bezier(.67,.01,.23,1);
+}
+
+#slidewrapper, #slidewrapper ul, #slidewrapper li {
+    margin: 0;
+    padding: 0;
+}
+
+.slide {
+    width: calc(100%/4);
+    list-style: none;
+    float: left;
+}
+
+.slide-img {
+    width: 100%;
+    height: 350px;
+    min-height: 350px;
+}
+
+#prev-btn, #next-btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #579D57;
+    border-radius: 50%;
+    top: 78%;
+    opacity: 0.6;
+    color: #fff;
+}
+
+#prev-btn:hover, #next-btn:hover {
+    cursor: pointer;
+}
+
+#prev-btn {
+    left: 360px;
+}
+
+#next-btn {
+    right: 20px;
+}
+#next-btn p {
+    margin: 15px 0px 15px 0px;
+}
+#prev-btn p {
+    margin: 15px 3px 15px 0px;
+}
+#nav-btns {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.slide-nav-btn {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background-color: #579D57;
+    border-radius: 50%;
+    margin: 3px;
+    opacity: 0.9;
+}
+
+.slide-nav-btn:hover {
+    cursor: pointer;
+    background-color: #EAFFE6;
+}
+/* конец правил слайдера 1 (картинки с би-нео)*/
+/*БЛОК ПОЧЕМУ БИНЕО*/
+.main-points {
+    display: block;
+    width: 100vw;
+    height: 850px;
+    margin: 0;
+    background-color: #70B570;
+}
+.why-bineo {
+    padding-top: 45px;
+    font-size: 4rem;
+    color: #fff;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+/*КОНЕЦ БЛОКА ПОЧЕМУ БИНЕО*/
+
+/* НАЧАЛО SLIDER 2*/
+.galleryContainer{
+    max-width: 1000px;
+    overflow: hidden;
+    user-select: none;
+    box-sizing: border-box;
+    margin-top: 150px;
+}
+
+.galleryContainer .slideShowContainer {
+  width:100%;
+  height:100%;
+  overflow: hidden;
+}
+
+.galleryContainer .slideShowContainer .imageHolder{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+}
+.galleryContainer .slideShowContainer .imageHolder img{
+    max-width: 80%;
+    height: auto;
+    width: 80%;
+    margin: 0 10%;
+}
+
+.nextPrevBtn {
+  font-size: 30px;
+  text-align: center;
+  color: grey;
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 10px;
+  transition: 0.6s ease;
+  z-index: 5;
+}
+
+.rightArrow {
+    margin-right: 6%;
+    margin-top: 11%;
+    right: 0;
+}
+.leftArrow {
+    margin-left: 6%;
+    margin-top: 11%;
+}
+.nextPrevBtn:hover {
+  color: white;
+}
+
+#playPause a{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  position: absolute;
+  display: inline-block;
+  z-index: 5;
+  text-align: center;
+  margin: 20px auto;
+  width: 100%;
+  cursor: pointer;
+  color: grey;
+  transition: 0.6s ease;
+}
+
+#play {
+  opacity: 0;
+}
+
+a:hover {
+  color: white;
+}
+
+.galleryContainer .moveLeftCurrentSlide{
+    animation-name: moveLeftCurrent;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+
+}
+.galleryContainer .moveLeftNextSlide{
+    animation-name: moveLeftNext;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+@keyframes moveLeftCurrent {
+    from {margin-left: 0;opacity: 1;}
+    to {margin-left: -100%;opacity: 1;}
+}
+@keyframes moveLeftNext {
+    from {margin-left: 100%;opacity: 1;}
+    to {margin-left: 0%;opacity: 1;}
+}
+
+.galleryContainer .moveRightCurrentSlide{
+    animation-name: moveRightCurrent;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+.galleryContainer .moveRightPrevSlide{
+    animation-name: moveRightPrev;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+@keyframes moveRightCurrent {
+    from {margin-left: 0;opacity: 1;}
+    to {margin-left: 100%;opacity: 1;}
+}
+@keyframes moveRightPrev {
+    from {margin-left: -100%;opacity: 1;}
+    to {margin-left: 0%;opacity: 1;}
+}
+.galleryContainer .moveRightCurrentSlide{
+    animation-name: moveRightCurrent;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+.galleryContainer .moveRightPrevSlide{
+    animation-name: moveRightPrev;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+@keyframes moveRightCurrent {
+    from {margin-left: 0;opacity: 1;}
+    to {margin-left: 100%;opacity: 1;}
+}
+@keyframes moveRightPrev {
+    from {margin-left: -100%;opacity: 1;}
+    to {margin-left: 0%;opacity: 1;}
+}
+/* КОНЕЦ SLIDER 2*/
+#playPause {
+    display: none;
+}
+/*ЦЕНОВОЙ БЛОК*/
+.one-more p {
+    color: #133f1e;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-top: 60px;
+}
+.bineo-price {
+    color: #70B570;
+    text-align: center;
+    font-size: 2rem;
+}
+.same-price {
+    height: 1100px;
+    width: 80%;
+    margin: 80px auto;
+    border: 2px solid #579D57;
+    border-top: 0px transparent;
+    padding: 0 50px;
+}
+.two-pics-block {
+    text-align: center;
+}
+.two-pics-block img {
+    width: 500px;
+    height: 355px;
+}
+
+.two-pics-parent {
+    clear: both;
+}
+.block1, .block2 {
+    margin-top: 80px;
+}
+.block1, .block3 {
+    float: left;
+}
+.block2, .block4 {
+    float: right;
+}
+.block3, .block4 {
+    margin-top: 80px;
+}
+.two-pics-block p {
+    color: #579D57;
+    font-size: 1.5rem;
+    font-family: 'Comfortaa', Arial, Helvetica, sans-serif;
+}
+/*КОНЕЦ ЦЕНОВОГО БЛОКА*/
+
+/*МОНТАЖ И СБОРКА*/
+.arrow-down.first-arrow {
+    margin-left: 50px;
+}
+.arrow-down {
+    margin-left: 40px;
+}
+.step-block p {
+    text-align: center;
+    color: #70B570;
+    font-size: 3rem;
+}
+.step {
+    width: 90%;
+    margin: 60px auto;
+    clear: both;
+    height: 606px;
+}
+.step p {
+    float: left;
+    font-size: 2rem;
+    color: #579D57;
+    margin: 0;
+}
+.step-son {
+    float: right;
+    width: 1260px;
+    height: 606px;
+}
+.step-son img {
+    width: inherit;
+    height: inherit;
+}
+/*КОНЕЦ БЛОКА МОНТАЖ И СБОРКА*/
+.model-row-container p {
+    text-align: center;
+    color: #70B570;
+    font-size: 2.5rem;
+    margin-top: 100px;
+    padding: 0 10%;
+}
+.table {
+    margin: 100px auto;
+}
+/*КАЛЬКУЛЯТОР*/
+.count {
+    text-align: center;
+    color: #70B570;
+    font-size: 2.5rem;
+    margin-top: 100px;
+    padding: 0 10%;
+}
+.calcul-area {
+    width: 100%;
+    margin: 100px auto;
+}
+.box-calculator{
+    box-shadow: 0 0 5px 5px;
+    color: #006616;
+    border-radius: 17px;
+}
+#calculator-label {
+    background: #00330c;
+    border-radius: 15px 15px 0 0;
+    width: 220px;
+}
+#calculator-label p {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+#block-block-3 {
+    width: fit-content;
+    width: -moz-fit-content;
+    font-size: 16px;
+    text-align: center;
+    color: #FFF;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0 auto;
+    border: 0;
+    border-radius: 6%;
+    display: block;
+    background-color: #70B570;
+
+}
+#block-block-3 table {
+    color: #f0f9f9;
+}
+#block-block-3 input, textarea, select {
+    font-family: inherit;
+    font-size: 106%;
+    margin: 0;
+    line-height: normal;
+    padding-top: 5px;
+    height: 25px;
+}
+select {
+    text-transform: none;
+    line-height: normal;
+}
+
+#block-block-3 #chelovek {
+    padding: 15px 7px 0 7px;
+    display: block;
+    height: 60px;
+    background-color: #009942;
+    border: 3px solid #006616;
+    border-top: 0;
+    border-bottom: 1px dashed #00330c;
+    color: #fff;
+}
+#block-block-3 #field_price_stanok_value, #calcul-up #field_price_stanok_value{
+	padding: 15px 5px 0 5px;
+	display: block; 	 
+	height: 40px;
+    background-color: #009942;
+    border-radius: 0 0 15px 15px;
+    border: 3px solid #006616;
+    border-top: 0;
+    color: #fff;
+}
+#block-block-3 #field_name_stanok_value, #calcul-up #field_name_stanok_value{
+    padding: 15px 5px 0 5px;
+    display: block; 
+    height: 55px;
+    background-color: #009942;
+    border: 3px solid #006616;
+    border-top: 0;
+    border-bottom: 1px dashed #00330c;
+    color: #fff;
+}
+#block-block-3 #proizvoditelnost, #calcul-up #proizvoditelnost{
+    padding: 10px 5px 0 5px;
+    display: block; 
+    height: 55px;
+    background-color: #009942;
+    border: 3px solid #006616;
+    border-top: 0;
+    border-bottom: 1px dashed #00330c;
+    color: #fff;
+}
+/*КОНЕЦ КАЛЬКУЛЯТОРА*/
+
+/*ordering*/
+.ordering {
+    text-align: center;
+    color: #70B570;
+    font-size: 2.5rem;
+    margin: 100px auto;
+    padding: 0 10%;
+}
+@media (max-width: 470px) {
+    .ordering {
+        font-size: 2rem
+    }
+}
+@media (max-width: 350px) {
+    .ordering {
+        font-size: 1.7rem
+    }
+}
+/*ordering*/
+
+/*ПОДВАЛ*/
+.footer {
+    width: 100%;
+    height: 270px;
+    background-color: #336633;
+}
+.footer1 {
+    float: left;
+    font-size: 1rem;
+    color: #fff;
+    padding: 20px 40px;
+    text-align: center;
+}
+.diler1, .retail1 {
+    font-size: 1.5rem;
+}
+.footer2 {
+    float: right;
+    font-size: 1rem;
+    color: #fff;
+    padding: 20px 40px;
+    text-align: center;
+}
+.footer3 {
+    text-align: center;
+    color: #fff;
+    padding: 20px 20% 0px 20%;
+    font-size: 1.5rem;
+}
+.footer-logos {
+    width: 100%;
+    height: 120px;
+    background-color: #336633;
+}
+.footlogo1 {
+    float: left;
+    padding-left: 50px;
+}
+.footlogo2 {
+    float: right;
+    padding-right: 50px;
+    padding-top: 10px;
+}
+.footlogo2 a img {
+    width: 165px;
+}
+.partner {
+    display: inline-block;
+}
+.partner img {
+    border: 1px solid #fff;
+    border-radius: 25%;
+}
+/*КОНЕЦ ПОДВАЛА*/
+
+/*PARTNERS*/
+
+@media (max-width: 4096px) and (min-width: 1550px) {
+    .partner1 {
+        margin-right: 100px;
+    }
+    .partner3 {
+        margin-left: 100px;
+    }
+    .footer2 {
+        padding: 20px 100px 20px 40px;
+    }
+    .footer1 {
+        padding: 20px 40px 20px 100px;
+    }
+}
+@media (min-width: 2000px) {
+    .main-points {
+        height: 1100px;
+    }
+}
+@media(max-width: 1549px) and (min-width: 1301px) {
+    .partner1 {
+        margin-right: 60px;
+    }
+    .partner3 {
+        margin-left: 60px;
+    
+    }
+    .footer1 {
+        padding: 20px 0px 20px 80px;
+    }
+    .footer2 {
+        padding: 20px 80px 20px 0px;
+    }
+    
+}
+@media(max-width: 1300px) and (min-width: 1171px) {
+    .partner1 {
+        margin-right: 40px;
+    }
+    .partner3 {
+        margin-left: 40px;
+    
+    }
+}
+@media(max-width: 1170px) and (min-width: 1121px ) {
+    .partner1 {
+        margin-right: 20px;
+    }
+    .partner3 {
+        margin-left: 20px;
+    }
+}
+@media(max-width: 1120px) and (min-width: 1095px ) {
+    .partner1 {
+        margin-right: 10px;
+    }
+    .partner3 {
+        margin-left: 10px;
+    }
+}
+@media (max-width: 1077px) and (min-width: 976px) {
+    .partner1 {
+        margin-right: 10px;
+    }
+    .partner2 {
+        margin-left: 10px;
+    }
+}
+@media (max-width: 948px) and (min-width: 901px) {
+    .partner2 {
+        margin-right: 10px;
+    }
+    .partner3 {
+        margin-left: 10px;
+    }
+}
+@media (max-width: 900px) and (min-width: 490px) {
+    .partner1 {
+        margin-right: 40px;
+    }
+    .partner3 {
+        margin-left: 40px;
+    }
+}
+/*PARTNERS*/
+/*MEDIA*/
+@media (max-width: 4096px) and (min-width: 1760px) {
+    .step-son {
+        margin-right: 100px;
+    }
+    .flex-2-right p {
+        padding: 3% 6%;
+        font-size: 1.35rem;
+    }
+}
+@media (max-width: 1759px) and (min-width: 1660px) {
+    .flex-2-right p {
+        padding: 3% 7%;
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 1659px) and (min-width: 1359px) {
+    .flex-2-right p {
+        padding: 25px 50px 50px 50px;
+        font-size: 1.27rem;
+    }
+}
+@media (max-width: 1358px) and (min-width: 1296px) {
+    .flex-2-right p {
+        padding: 30px 50px;
+        font-size: 1.19rem;
+    }
+}
+@media (max-width: 1295px) and (min-width: 1075px) {
+    .flex-2-right p {
+        padding: 30px 50px;
+        font-size: 1.15rem;
+    }
+}
+@media (max-width: 1080px) and (min-width: 900px) {
+    .footer-logos {
+        height: 140px;
+    }
+}
+@media (max-width: 899px) and (min-width: 650px) {
+    .footer-logos {
+        height: 200px;
+    }
+    .footlogo1, .footlogo2 {
+        padding: 50px;
+    }
+}
+@media (max-width: 650px) and (min-width: 320px) {
+    .footer-logos {
+        height: 420px;
+    }
+    .footlogo1, .footlogo2 {
+        float: none;
+        text-align: center;
+        clear: both;
+        padding: 50px;
+    }
+}
+@media (max-width: 1074px) and (min-width: 711px) {
+    .flex-2-right p {
+        padding: 4% 8%;
+        font-size: 1rem;
+    }
+}
+@media (max-width: 710px) {
+    .flex-2-right p {
+        padding: 2% 16% 2% 5%;
+        font-size: 1rem;
+    }
+}
+@media (max-width: 460px) {
+    .flex-2-right p {
+        padding: 2% 16% 2% 5%;
+        font-size: 0.85rem;
+    }
+}
+@media (max-width: 1780px) and (min-width: 1660px) {
+    .flex-container-1 {
+        width: 68%;
+    }
+    .flex-container-1 h1 {
+        font-size: 2.3rem;
+    }
+}
+@media (max-width: 1659px) and (min-width: 1550px) {
+    .flex-container-1 {
+        width: 65%;
+        margin-top: 100px;
+    }
+    .flex-container-1 h1 {
+        font-size: 2.2rem;
+    }
+}
+@media (max-width: 1549px) and (min-width: 1380px) {
+    .flex-container-1 {
+        width: 62%;
+    }
+    .flex-container-1 h1 {
+        font-size: 2.4rem;
+    }
+}
+@media (max-width: 1379px) and (min-width: 1300px) {
+    .flex-container-1 {
+        width: 58%;
+        margin-top: 100px;
+    }
+    .flex-container-1 h1 {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 1299px) and (min-width: 1256px) {
+    .flex-container-1 {
+        width: 57%;
+        margin-top: 100px;
+    }
+    .flex-container-1 h1 {
+    font-size: 2rem;
+    }
+}
+@media (max-width: 1650px) {
+    .step-son {
+        width: 1000px;
+        height: 480px;
+        margin-right: 100px;
+    }
+    .arrow-down {
+        height: 600px;
+    }
+    .arrow-down.last-arrow {
+        height: 710px;
+    }
+}
+@media (max-width: 1470px) {
+    .step-son {
+        margin-right: 0;
+    }
+}
+@media (max-width: 1355px) {
+    .step-son {
+        width: 900px;
+        height: 432px;
+    }
+    .step {
+        height: 600px;
+    }
+}
+@media (max-width: 1245px) {
+    .step {
+        height: 500px;
+    }
+    .step-son {
+        width: 800px;
+        height: 385px;
+    }
+    .arrow-down {
+        height: 500px;
+    }
+    .arrow-down.last-arrow {
+        height: 592px;
+        margin-top: 7px;
+    }
+}
+@media (max-width: 1120px) {
+    .step-son {
+        width: 640px;
+        height: 308px;
+        margin-right: 100px;
+    }
+    .step {
+        height: 425px;
+    }
+    .arrow-down {
+        height: 425px;
+    }
+    .arrow-down.last-arrow {
+        height: 503px;
+        margin-top: 7px;
+    }
+}
+@media (max-width: 1090px) {
+    .step-son {
+        margin-right: 0;
+    }
+}
+@media (max-width: 940px) {
+    .step-son {
+        width: 500px;
+        height: 240px;
+    }
+    .step {
+        height: 250px;
+    }
+    .arrow-down {
+        height: 250px;
+        margin-top: 17px;
+    }
+    .arrow-down.last-arrow {
+        height: 320px;
+        margin-top: 17px;
+    }
+}
+@media (max-width: 755px) {
+    .step-son {
+        width: 400px;
+        height: 192px;
+    }
+    .step {
+        height: 202px;
+    }
+    .arrow-down {
+        height: 202px;
+        margin-top: 17px;
+    }
+    .arrow-down.last-arrow {
+        height: 273px;
+        margin-top: 17px;
+    }
+}
+@media (max-width: 4096px) and (min-width: 1000px) {
+    .box-calculator table {
+        width: 500px;
+    }
+    .box-calculator td {
+        font-size: 14pt;
+    }
+    
+    #calculator-label {
+        height: 80px;
+    }
+    #field_price_stanok_value, #chelovek, #proizvoditelnost, #field_name_stanok_value {
+        height: 70px!important;
+    }
+    
+    .table td {
+        padding: 3px 25px;
+    }
+    .table {
+        width: 854px;
+    }
+}
+@media (max-width: 4096px) and (min-width: 1600px) {
+    .two-pics-parent {
+        margin: auto 10%;
+    }
+    .galleryContainer {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 1600px) and (min-width: 1401px) {
+    .two-pics-parent {
+        margin: auto 4%;
+    }
+    .galleryContainer {
+        margin-top: 100px;
+    }
+}
+@media (max-width: 1400px) {
+    .main-points {
+        height: 700px;
+    }
+    .galleryContainer {
+        margin-top: 100px;
+    }
+    
+}
+@media (max-width: 1275px) {
+    .two-pics-block img {
+        width: 400px;
+        height: 275px;
+    }
+    .same-price {
+        height: 950px;
+    }
+}
+
+@media (max-width: 1255px) {
+    .flex-container-2 {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .flex-2-left {
+        margin-top: 0;
+        align-self: center;
+    }
+
+    .flex-2-right {
+        margin-top: 80px;
+        align-self: center;
+    }
+
+    .main-points {
+        margin-top: 300px;
+    }
+    .logo img {
+    width: 243px;
+    height: 135px;
+    }
+    
+}
+@media (max-width: 1255px) and (min-width: 951px) {
+    .flex-container-1 {
+        float: none;
+        margin-top: 0;
+        width: 80%;
+    }
+}
+@media (max-width: 950px) and (min-width: 320px) {
+    .flex-container-1 h1 {
+        font-size: 2rem;
+    }
+    .flex-container-1 {
+        float: none;
+        margin-top: 0;
+        width: 90%;
+    }
+}
+@media (max-width: 1170px) {
+    .galleryContainer .slideShowContainer .imageHolder img{
+        max-width: 86%;
+        width: 86%;
+        margin: 0 7%;
+    }
+
+    .leftArrow {
+        margin-left: 2%;
+    }
+    .rightArrow {
+        margin-right: 2%;
+    }
+}
+@media (max-width: 1070px) {
+    .why-bineo {
+        padding: 45px 2% 0 2%;
+    }
+}
+@media (max-width: 1025px) {
+    .block1, .block2, .block3, .block4 {
+        float: none;
+        margin: 0;
+    }
+    .same-price {
+        height: 1500px;
+    }
+    .block1 {
+        margin-top: 50px;
+    }
+    .block1, .block2, .block3 {
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 1000px) {
+    .main-points {
+        height: 650px;
+    }
+}
+@media (max-width: 999px) and (min-width: 617px) {
+    .table {
+        width: 617px;
+    }
+    .table td {
+        padding: 3px 8px;
+    }
+}
+@media (max-width: 900px) {
+    .footer {
+        height: 750px;
+    }
+    .footer1, .footer2, .footer3 {
+        float: none;
+        padding: 40px 0;
+        text-align: center;
+    }
+}
+@media (max-width: 877px) {
+    .same-price {
+        height: 1600px;
+    }
+}
+@media (max-width: 820px) {
+    .galleryContainer {
+        margin-top: 100px;
+    }
+}
+@media (max-width: 710px) {
+    .logo {
+        width: 243px;
+        margin: auto;
+        float: none;
+        padding: 30px 0 0 0;
+    }
+    .flex-container-1 h1 {
+        font-size: 2rem;
+    }
+    .flex-2-right {
+        width: 100%
+    }
+    .main-points {
+        margin-top: 150px;
+        height: 550px;
+    }
+    .why-bineo {
+        font-size: 3rem;
+    }
+    .nextPrevBtn {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 650px) {
+    .main-points {
+        margin-top: 220px;
+    }
+}
+@media (max-width: 635px) {
+    .arrow-down, .arrow-down.last-arrow, .arrow-down.first-arrow {
+        margin-left: 0;
+    }
+    .step {
+        height: 272px;
+        width: 80%;
+        margin: 30px auto;
+    }
+    .step4 {
+        width: 400px;
+    }
+    .step4 p {
+        margin-top: 60px;
+    }
+    .step p {
+        float: none;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 616px) and (min-width: 415px) {
+    .table {
+        width: 415px;
+        overflow: hidden;
+    }
+    .xl65, .xl66, .none {
+        display: none;
+    }
+}
+@media (max-width: 555px) {
+    .arrow-down, .arrow-down.last-arrow, .arrow-down.first-arrow {
+        display: none;
+    }
+    .step {
+        width: 400px;
+    }
+
+    .bineo-price {
+        font-size: 1.5rem;
+    }
+    
+    .one-more p {
+        font-size: 1.6rem;
+    }
+    
+    .same-price {
+        width: 76%;
+        height: 1250px;
+    }
+    .two-pics-block img {
+        width: 300px!important;
+        height: 207px!important;
+    }
+    .main-points {
+        margin-top: 241px;
+    }
+    .galleryContainer {
+        margin-top: 0px;
+    }
+    .why-bineo {
+        padding: 105px 2% 0 2%;
+    }
+}
+@media (max-width: 515px) {
+    .main-points {
+        margin-top: 40px;
+    }
+    .why-bineo {
+        padding: 150px 2% 0 2%;
+        font-size: 2rem;
+    }
+    .galleryContainer {
+        margin-top: 100px;
+    }
+    .flex-2-left {
+        width: 300px;
+        height: 210px;
+    }
+    #block-for-slider {
+        width: 300px;
+        height: 210px;
+    }
+    #viewport {
+        width: 100%;
+        height: inherit;
+    }
+    .slide-img {
+        width: 310px;
+        height: 210px;
+        min-height: 210px;
+    }
+    .slide-nav-btn {
+        width: 15px;
+        height: 15px;
+    }
+    #nav-btns {
+        bottom: 5px;
+    }
+    #prev-btn {
+        left: 237px;
+    }
+    #prev-btn, #next-btn {
+        width: 25px;
+        height: 25px;
+    }
+    #next-btn {
+        right: 6px;
+    }
+    #prev-btn p, #next-btn p {
+        font-size: 0.3rem;
+    }
+    #prev-btn p, #next-btn p {
+        margin: 9px;
+    }
+}
+@media (max-width: 500px) {
+    .galleryContainer .slideShowContainer .imageHolder img {
+        max-width: 500px;
+        width: 96%;
+        margin: 0 2%;
+    }
+    .leftArrow, .rightArrow {
+        display: none;
+    }
+    .same-price {
+        width: 300px;
+    }
+}
+@media (max-width: 425px) {
+    .step-son {
+        width: 300px;
+        height: 144px;
+    }
+    .step {
+        width: 300px;
+        height: 224px;
+    }
+    .same-price {
+        padding: 0 10px;
+    }
+    .model-row-container p.model-label {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 414px) and (min-width: 320px) {
+    .table {
+        width: 309px;
+    }
+    
+    .xl65, .xl66, .none, .none2 {
+        display: none;
+    }
+}
+@media (max-width: 400px) {
+    .flex-2-right p {
+        padding: 1% 4.5%;
+        font-size: 0.9rem;
+    }
+    .why-bineo {
+        padding: 140px 2% 0 2%;
+    }
+    .main-points {
+        margin-top: 60px;
+    }
+}
+@media (max-width: 377px) {
+    .footer-logos {
+        padding-top: 200px;
+    }
+    .partner1 {
+        margin-right: 15px;
+    }
+    .partner2 {
+        margin-left: 15px;
+    }
+}
+@media (max-width: 350px) {
+    .model-row-container p.model-label {
+        font-size: 1.8rem;
+    }
+    .leftArrow {
+        margin-top: 8%;
+        margin-left: 0;
+    }
+    .rightArrow {
+        margin-right: 0;
+        margin-top: 8%;
+}
+}
+@media (max-width: 345px) {
+    .flex-2-right {
+        height: 735px;
+    }
+    .same-price {
+        padding: 0 4px;
+    }
+}
