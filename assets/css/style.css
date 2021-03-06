@@ -429,7 +429,7 @@ a:hover {
     height: 606px;
 }
 .step-son img {
-    width: inherit;
+    width: 100%;
     height: inherit;
 }
 /*КОНЕЦ БЛОКА МОНТАЖ И СБОРКА*/
@@ -793,7 +793,7 @@ select {
 /*MEDIA*/
 @media (max-width: 1920px) and (min-width: 1760px) {
     .step-son {
-        margin-right: 100px;
+        margin-right: 5%;
     }
 }
 
