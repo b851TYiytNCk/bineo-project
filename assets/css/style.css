@@ -19,6 +19,7 @@ body {
 html, body, section {
     width: 100%;
 }
+
 .top-line {
     width: 100%;
     height: 25px;
@@ -219,7 +220,6 @@ html, body, section {
 
 .galleryContainer .slideShowContainer .slidie /*.imageHolder*/{
     width: 100%;
-    height: 100%;
     position: absolute;
     opacity: 0;
     transition: opacity 0.9s ease-in-out;
@@ -228,7 +228,7 @@ html, body, section {
     opacity: 1;
 }
 .galleryContainer .slideShowContainer .slidie img{
-    max-width: 80%;
+    max-width: 1536px;
     height: auto;
     width: 80%;
     margin: 0 10%;
@@ -355,58 +355,51 @@ a:hover {
     font-weight: 800;
     margin-top: 60px;
 }
+
 .bineo-price {
     color: #70B570;
     text-align: center;
     font-size: 2rem;
+    margin: 0 0 1em;
 }
+
 .same-price {
-    box-sizing: content-box;
-    height: 1100px;
-    width: 80%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
     margin: 80px auto;
     border: 2px solid #579D57;
     border-top: 0px transparent;
-    padding: 0 50px;
-}
-.two-pics-block {
-    text-align: center;
-}
-.two-pics-block img {
-    width: 500px;
-    height: 355px;
+    padding: 0 50px 50px;
 }
 
-.two-pics-parent {
-    clear: both;
+.two-pics {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 80px;
 }
-.block1, .block2 {
-    margin-top: 80px;
+
+.pic-block img {
+    width: 500px;
+    height: 360px;
+    border-radius: 5px;
 }
-.block1, .block3 {
-    float: left;
-}
-.block2, .block4 {
-    float: right;
-}
-.block3, .block4 {
-    margin-top: 80px;
-}
-.two-pics-block p {
-    color: #579D57;
-    font-size: 1.5rem;
-    font-family: 'Comfortaa', Arial, Helvetica, sans-serif;
-}
+
 /*КОНЕЦ ЦЕНОВОГО БЛОКА*/
 
 /*МОНТАЖ И СБОРКА*/
 .arrow-down.first-arrow {
     margin-left: 50px;
 }
+
+.arrow-down.last-arrow {
+    height: 710px;
+}
+
 .arrow-down {
     margin-left: 40px;
 }
-.step-block p {
+.step-block-label {
     text-align: center;
     color: #70B570;
     font-size: 3rem;
@@ -604,6 +597,7 @@ select {
 /*КОНЕЦ КАЛЬКУЛЯТОРА*/
 
 /*ordering*/
+
 .ordering {
     text-align: center;
     color: #70B570;
@@ -612,34 +606,15 @@ select {
     padding: 0 10%;
 }
 
-@media only screen and (max-width: 1700px) {
-    .label h1 {
-        font-size: 2.1em;
-        max-width: 90%;
-    }
-    #first {
-        padding-right: 0;
-    }
-}
-
-@media (max-width: 470px) {
-    .ordering {
-        font-size: 2rem
-    }
-}
-@media (max-width: 350px) {
-    .ordering {
-        font-size: 1.7rem
-    }
-}
 /*ordering*/
 
 /*ПОДВАЛ*/
 .footer {
     width: 100%;
-    height: 250px;
+    height: auto;
     background-color: #336633;
     overflow: visible;
+    padding: 0 20px;
 }
 .footer1 {
     float: left;
@@ -661,7 +636,7 @@ select {
 .footer3 {
     text-align: center;
     color: #fff;
-    padding: 20px 20% 0px 20%;
+    padding: 20px 20% 0px;
     font-size: 1.5rem;
 }
 .footer-logos {
@@ -681,119 +656,47 @@ select {
 .footlogo2 a img {
     width: 165px;
 }
-.partner {
-    display: inline-block;
+
+.partners {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
 .partner img {
     border: 1px solid #fff;
     border-radius: 25%;
 }
 /*КОНЕЦ ПОДВАЛА*/
 
-/*PARTNERS*/
-
-@media (max-width: 2160px) and (min-width: 1550px) {
-    .partner1 {
-        margin-right: 100px;
-    }
-    .partner3 {
-        margin-left: 100px;
-    }
-    .footlogo1{
-        padding-left: 100px;
-    }
-    .footlogo2 {
-        padding-right: 100px;
-    }
-    .footer2 {
-        padding: 20px 100px 20px 40px;
-    }
-    .footer1 {
-        padding: 20px 40px 20px 100px;
-    }
-}
-@media(max-width: 1549px) and (min-width: 1301px) {
-    .partner1 {
-        margin-right: 60px;
-    }
-    .partner3 {
-        margin-left: 60px;
-    }
-    .footlogo1{
-        padding-left: 80px;
-    }
-    .footlogo2 {
-        padding-right: 80px;
-    }
-    .footer1 {
-        padding: 20px 0px 20px 80px;
-    }
-    .footer2 {
-        padding: 20px 80px 20px 0px;
-    }
-    
-}
-@media(max-width: 1300px) and (min-width: 1171px) {
-    .partner1 {
-        margin-right: 40px;
-    }
-    .partner3 {
-        margin-left: 40px;
-    
-    }
-}
-@media(max-width: 1170px) and (min-width: 1121px ) {
-    .partner1 {
-        margin-right: 20px;
-    }
-    .partner3 {
-        margin-left: 20px;
-    }
-}
-@media(max-width: 1120px) and (min-width: 1095px ) {
-    .partner1 {
-        margin-right: 10px;
-    }
-    .partner3 {
-        margin-left: 10px;
-    }
-}
-@media (max-width: 1077px) {
-    .partner {
-        margin-top: 10px;
-        margin-bottom: 0px;
-    }
-}
-@media (max-width: 1077px) and (min-width: 976px) {
-    .partner1 {
-        margin-right: 10px;
-    }
-    .partner2 {
-        margin-left: 10px;
-    }
-}
-@media (max-width: 948px) and (min-width: 901px) {
-    .partner2 {
-        margin-right: 10px;
-    }
-    .partner3 {
-        margin-left: 10px;
-    }
-}
-@media (max-width: 900px) and (min-width: 490px) {
-    .partner1 {
-        margin-right: 40px;
-    }
-    .partner3 {
-        margin-left: 40px;
-    }
-}
-/*PARTNERS*/
-
 /*MEDIA*/
+
 @media (max-width: 1920px) and (min-width: 1760px) {
     .step-son {
         margin-right: 100px;
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    .label h1 {
+        font-size: 2.1em;
+        max-width: 90%;
+    }
+    #first {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 1650px) {
+    .step-son {
+        width: 80%;
+        height: auto;
+    }
+    .step-son img {
+        width: 100%;
+    }
+    .arrow-down {
+        height: 600px;
     }
 }
 
@@ -807,6 +710,23 @@ select {
     .green-box p {
         font-size: 16px;
     }
+}
+
+@media (max-width: 1400px) {
+    .main-points {
+        height: 700px;
+    }
+
+    .pic-block {
+        width: 40%;
+        height: auto;
+    }
+
+    .pic-block img {
+        width: 100%;
+        height: 100%;
+    }
+
 }
 
 @media (max-width: 1250px) {
@@ -841,6 +761,36 @@ select {
     
 }
 
+@media (max-width: 1200px) {
+    .step, .step-son, .arrow-down {
+        height: 500px;
+    }
+    .arrow-down {
+        margin-left: 20px;
+    }
+
+    .arrow-down.first-arrow {
+        margin-left: 30px;
+    }
+
+    .arrow-down.last-arrow {
+        height: 600px;
+        margin-left: 15px;
+    }
+    .step-son img {
+        height: auto;
+    }
+
+    .footer {
+        padding: 0;
+    }
+
+    .footer1, .footer2 {
+        padding: 20px;
+    }
+
+}
+
 @media (max-width: 1000px) {
     #first {
         grid: 55.5px 1fr / 100%;
@@ -867,9 +817,29 @@ select {
         font-size: 3rem;
         padding: 45px 0;
     }
+    .same-price {
+        padding: 0 4%;
+    }
+
+    .arrow-down {
+        display: none;
+    }
+
+    .step, .step-son {
+        height: calc(72vw * 0.469);
+    }
+
+    .footer1, .footer2, .footer3 {
+        float: none;
+        padding: 40px 0;
+        text-align: center;
+    }
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
+    .label h1, .step-block-label, .model-row-container p, .count {
+        font-size: 2rem;
+    }
     .green-box {
         width: 100%;
     }
@@ -878,23 +848,27 @@ select {
     }
     .why-bineo {
         font-size: 2.5rem;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .bineo-price, .step p {
+        font-size: 1.5rem;
+    }
+    .two-pics {
+        margin-bottom: 50px;
     }
 }
 
-@media (max-width: 1080px) and (min-width: 900px) {
-    .footer-logos {
-        height: 140px;
+@media (max-width: 710px) {
+    .main-points {
+        height: 550px;
+    }
+    .nextPrevBtn {
+        font-size: 1rem;
     }
 }
-@media (max-width: 899px) and (min-width: 650px) {
-    .footer-logos {
-        height: 200px;
-    }
-    .footlogo1, .footlogo2 {
-        padding: 50px;
-    }
-}
-@media (max-width: 650px) and (min-width: 320px) {
+
+@media (max-width: 650px) {
     .description {
         grid: 350px 650px / 100%;
     }
@@ -902,9 +876,26 @@ select {
         height: 650px;
         align-content: space-around;
     }
+
+    .step {
+        width: 80%;
+        margin: 30px auto;
+        height: calc(80vw * 0.4742 + 60px);
+    }
+    .step-son {
+        width: 100%;
+        height: calc(100% - 60px);
+        margin: 0 auto;
+        float: none;
+    }
+    .step p {
+        float: none;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
     .footer-logos {
-        height: 350px;
-        box-sizing: content-box;
+        height: 322px;
     }
     .footlogo1, .footlogo2 {
         float: none;
@@ -914,105 +905,6 @@ select {
     }
 }
 
-@media (max-width: 1650px) {
-    .step-son {
-        width: 1000px;
-        height: 469px;
-        margin-right: 100px;
-    }
-    .arrow-down {
-        height: 600px;
-    }
-    .arrow-down.last-arrow {
-        height: 710px;
-    }
-}
-@media (max-width: 1470px) {
-    .step-son {
-        margin-right: 0;
-    }
-}
-@media (max-width: 1355px) {
-    .step-son {
-        width: 900px;
-        height: 432px;
-    }
-    .step {
-        height: 600px;
-    }
-}
-@media (max-width: 1245px) {
-    .step {
-        height: 500px;
-    }
-    .step-son {
-        width: 800px;
-        height: 385px;
-    }
-    .arrow-down {
-        height: 500px;
-    }
-    .arrow-down.last-arrow {
-        height: 592px;
-        margin-top: 7px;
-    }
-}
-@media (max-width: 1120px) {
-    .step-son {
-        width: 640px;
-        height: 308px;
-        margin-right: 100px;
-    }
-    .step {
-        height: 425px;
-    }
-    .arrow-down {
-        height: 425px;
-    }
-    .arrow-down.last-arrow {
-        height: 503px;
-        margin-top: 7px;
-    }
-}
-@media (max-width: 1090px) {
-    .step-son {
-        margin-right: 0;
-    }
-}
-@media (max-width: 940px) {
-    .step-son {
-        width: 500px;
-        height: 240px;
-    }
-    .step {
-        height: 250px;
-    }
-    .arrow-down {
-        height: 250px;
-        margin-top: 17px;
-    }
-    .arrow-down.last-arrow {
-        height: 320px;
-        margin-top: 17px;
-    }
-}
-@media (max-width: 755px) {
-    .step-son {
-        width: 400px;
-        height: 192px;
-    }
-    .step {
-        height: 202px;
-    }
-    .arrow-down {
-        height: 202px;
-        margin-top: 17px;
-    }
-    .arrow-down.last-arrow {
-        height: 273px;
-        margin-top: 17px;
-    }
-}
 @media (min-width: 1000px) {
     .box-calculator table {
         width: 500px;
@@ -1035,62 +927,7 @@ select {
         width: 854px;
     }
 }
-@media (max-width: 1920px) and (min-width: 1600px) {
-    .two-pics-parent {
-        margin: auto 10%;
-    }
-}
 
-@media (max-width: 1600px) and (min-width: 1401px) {
-    .two-pics-parent {
-        margin: auto 4%;
-    }
-}
-@media (max-width: 1400px) {
-    .main-points {
-        height: 700px;
-    }
-}
-@media (max-width: 1275px) {
-    .two-pics-block img {
-        width: 400px;
-        height: 275px;
-    }
-    .same-price {
-        height: 950px;
-    }
-}
-
-@media (max-width: 1170px) {
-    .galleryContainer .slideShowContainer .slidie img{
-        max-width: 86%;
-        width: 86%;
-        margin: 0 7%;
-    }
-
-    .leftArrow {
-        margin-left: 2%;
-    }
-    .rightArrow {
-        margin-right: 2%;
-    }
-}
-
-@media (max-width: 1025px) {
-    .block1, .block2, .block3, .block4 {
-        float: none;
-        margin: 0;
-    }
-    .same-price {
-        height: 1500px;
-    }
-    .block1 {
-        margin-top: 50px;
-    }
-    .block1, .block2, .block3 {
-        margin-bottom: 50px;
-    }
-}
 @media (max-width: 999px) and (min-width: 617px) {
     .table {
         width: 617px;
@@ -1108,7 +945,7 @@ select {
         display: none;
     }
 }
-@media (max-width: 414px) and (min-width: 320px) {
+@media (max-width: 414px) {
     .table {
         width: 309px;
     }
@@ -1117,80 +954,13 @@ select {
         display: none;
     }
 }
-@media (max-width: 900px) {
-    .footer {
-        height: 750px;
-    }
-    .footer1, .footer2, .footer3 {
-        float: none;
-        padding: 40px 0;
-        text-align: center;
-    }
-}
-@media (max-width: 877px) {
-    .same-price {
-        height: 1600px;
-    }
-}
-@media (max-width: 710px) {
-    .label h1 {
-        font-size: 2rem;
-    }
-    .main-points {
-        height: 550px;
-    }
-    .nextPrevBtn {
-        font-size: 1rem;
-    }
-}
-@media (max-width: 635px) {
-    .arrow-down, .arrow-down.last-arrow, .arrow-down.first-arrow {
-        margin-left: 0;
-    }
-    .step {
-        height: 272px;
-        width: 80%;
-        margin: 30px auto;
-    }
-    .step4 {
-        width: 400px;
-    }
-    .step4 p {
-        margin-top: 60px;
-    }
-    .step p {
-        float: none;
-        margin-bottom: 30px;
-    }
-}
-@media (max-width: 555px) {
-    .arrow-down, .arrow-down.last-arrow, .arrow-down.first-arrow {
-        display: none;
-    }
-    .step {
-        width: 400px;
-    }
 
-    .bineo-price {
-        font-size: 1.5rem;
-    }
-    
-    .one-more p {
-        font-size: 1.6rem;
-    }
-    
-    .same-price {
-        width: 76%;
-        height: 1250px;
-    }
-    .two-pics-block img {
-        width: 300px!important;
-        height: 207px!important;
-    }
-}
 @media (max-width: 515px) {
     .label h1 {
-        font-size: 25px;
+        font-size: 20px;
+    }
+    .why-bineo, .ordering {
+        font-size: 2rem;
     }
     #block-for-slider, .slider-box {
         width: 100%;
@@ -1229,17 +999,7 @@ select {
     }
 }
 @media (max-width: 500px) {
-    .galleryContainer .slideShowContainer .slidie img {
-        max-width: 500px;
-        width: 96%;
-        margin: 0 2%;
-    }
-    .leftArrow, .rightArrow {
-        display: none;
-    }
-    .same-price {
-        width: 300px;
-    }
+
     .calcul-area {
         width: 100%;
     }
@@ -1251,54 +1011,75 @@ select {
         height: calc(100vw / 1.428);
     }
     .slide-img {
-        height: auto;
+        height: 100%;
         min-height: unset;
         max-height: 350px;
     }
-}
-@media (max-width: 425px) {
-    .step-son {
-        width: 300px;
-        height: 144px;
+
+    .two-pics {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
     }
-    .step {
+
+    .pic-block {
         width: 300px;
-        height: 224px;
     }
-    .same-price {
+
+    .two-pics, .pic-block:first-child {
+        margin-bottom: 40px;
+    }
+
+    .one-more p {
         padding: 0 10px;
     }
-    .model-row-container p.model-label {
-        font-size: 2rem;
-    }
+
 }
+
 @media (max-width: 400px) {
-    .why-bineo {
-        font-size: 2rem;
-        margin: 0 2%;
-    }
-    .label h1 {
-        font-size: 20px;
-    }
     .green-box {
         padding: 40px;
     }
+    .same-price {
+        width: 100%;
+        margin-top: 60px;
+    }
+    .step {
+        height: calc(80vw * 0.4742 + 60px);
+    }
+    .step-son {
+        height: calc(100% - 60px);
+    }
+
+    .model-row-container p.model-label, .count {
+        margin-top: 80px;
+    }
+
+    .ordering {
+        margin: 80px auto;
+    }
+
+    .bineo-table, .calcul-area {
+        margin: 60px auto;
+    }
+    
+    .ordering, .model-row-container p.model-label, .step-block-label, .count {
+        font-size: 1.8rem
+    }
+
+    .partners {
+        flex-wrap: wrap;
+    }
+    .partners p {
+        padding: 0 10px;
+    }
+    .partner img {
+        max-width: 110px;
+        min-height: 101px;
+    }
 }
-@media (max-width: 377px) {
-    .footer-logos {
-        padding-top: 100px;
-    }
-    .partner1 {
-        margin-right: 15px;
-    }
-    .partner2 {
-        margin-left: 15px;
-    }
-}
+
 @media (max-width: 350px) {
-    .model-row-container p.model-label {
-        font-size: 1.8rem;
-    }
     .leftArrow {
         margin-top: 8%;
         margin-left: 0;
@@ -1306,13 +1087,5 @@ select {
     .rightArrow {
         margin-right: 0;
         margin-top: 8%;
-}
-}
-@media (max-width: 345px) {
-    .flex-2-right {
-        height: 735px;
-    }
-    .same-price {
-        padding: 0 4px;
     }
 }
