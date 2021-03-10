@@ -85,69 +85,37 @@
         
         <div class="same-price">
             <p class="bineo-price">Мы оставили цену на BiNeo такую-же, как и на установки «Биолайн» предыдущих поколений и их аналоги на рынке Украины</p>
-            
-            <div class="two-pics">
-                <div class="pic-block">
+            <div class="two-pics-parent">
+                <div class="two-pics-block block1">
                     <img src="assets/img/price-bineo/price-bineo-1.jpg">
                 </div>
-                <div class="pic-block">
+                <div class="two-pics-block block2">
                     <img src="assets/img/price-bineo/price-bineo-2.jpg">
                 </div>
             </div>
-            
-            <div class="two-pics">
-                <div class="pic-block">
+            <div class="two-pics-parent">
+                <div class="two-pics-block block3">
                     <img src="assets/img/price-bineo/price-bineo-3.jpg">
                 </div>
             
-                <div class="pic-block">
+                <div class="two-pics-block block4">
                     <img src="assets/img/price-bineo/price-bineo-4.jpg">
                 </div>
             </div>
-
         </div>
         <div class="step-block">
-            <p class="step-block-label">Монтаж и сборка</p>
+            <p>Монтаж и сборка</p>
             <div class="step step1">
-
-                <div class="pointer">
-                    <p>Шаг 1</p>
-                    <div class="arrow-block">
-                        <span class="arrow-line"></span>    
-                    </div>
-                </div>
-
-                <div class="step-son"><img src="assets/img/assembly/bineo-01.jpg"></div>
+                <p>Шаг 1</p><img class="arrow-down first-arrow" src="assets/img/arrow-down.png"><div class="step-son"><img src="assets/img/assembly/bineo-01.jpg"></div>
             </div>
             <div class="step step2">
-                
-                <div class="pointer">
-                    <p>Шаг 2</p>
-                    <div class="arrow-block">
-                        <span class="arrow-line"></span>    
-                    </div>
-                </div>
-
-                <div class="step-son"><img src="assets/img/assembly/bineo-02.jpg"></div>
+                <p>Шаг 2</p><img class="arrow-down" src="assets/img/arrow-down.png"><div class="step-son"><img src="assets/img/assembly/bineo-02.jpg"></div>
             </div>
             <div class="step step3">
-                
-                <div class="pointer">
-                    <p>Шаг 3</p>
-                    <div class="arrow-block">
-                        <span class="arrow-line"></span>    
-                    </div>
-                </div>
-
-                <div class="step-son"><img src="assets/img/assembly/bineo-03.jpg"></div>
+                <p>Шаг 3</p><img class="arrow-down last-arrow" src="assets/img/arrow-down-last.png"><div class="step-son"><img src="assets/img/assembly/bineo-03.jpg"></div>
             </div>
             <div class="step step4">
-                <div class="pointer">
-                    <p>Шаг 4</p>
-                    <div class="round"></div>    
-                </div>
-
-                <div class="step-son"><img src="assets/img/assembly/bineo-04.jpg"></div>
+                <p>Шаг 4</p><div class="step-son"><img src="assets/img/assembly/bineo-04.jpg"></div>
             </div>
         </div>
 
@@ -314,8 +282,8 @@
             </div>
         </div>
         <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/slider-tp.js"></script>
-        <script src="assets/js/slider-md.js"></script>
+        <script src="assets/js/slider1.js"></script>
+        <script src="assets/js/slider-op.js"></script>
         <script src="assets/js/calculator.js"></script>
 </body>
 

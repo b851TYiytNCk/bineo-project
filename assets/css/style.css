@@ -388,41 +388,88 @@ a:hover {
 /*КОНЕЦ ЦЕНОВОГО БЛОКА*/
 
 /*МОНТАЖ И СБОРКА*/
-.arrow-down.first-arrow {
-    margin-left: 50px;
-}
-
-.arrow-down.last-arrow {
-    height: 710px;
-}
-
-.arrow-down {
-    margin-left: 40px;
-}
 .step-block-label {
     text-align: center;
     color: #70B570;
     font-size: 3rem;
 }
 .step {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
     width: 90%;
-    margin: 60px auto;
-    clear: both;
     height: 606px;
+    margin: 60px auto;
 }
 .step p {
-    float: left;
+    width: 90px;
     font-size: 2rem;
     color: #579D57;
     margin: 0;
 }
+
+.pointer {
+    display: flex;
+    position: relative;
+    width: 160px;
+    height: 100%;
+}
+
+.arrow-block {
+    position: absolute;
+    width: 60px;
+    height: calc(100% - 5px);
+    top: 5px;
+    left: 100px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.arrow-line {
+    display: inline-block;
+    width: 2px;
+    height: 100%;
+    background-color: #70B570;
+}
+
+.arrow-line::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: #70B570;
+    border-radius: 50%;
+}
+
+.arrow-line::after {
+    position: absolute;
+    content: '';
+    bottom: -2px;
+    left: 15px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 30px solid #70B570;
+}
+.round {
+    position: absolute;
+    top: 5px;
+    left: 115px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #70B570;
+}
+
 .step-son {
-    float: right;
     width: 1260px;
     height: 606px;
 }
 .step-son img {
-    width: inherit;
+    width: 100%;
     height: inherit;
 }
 /*КОНЕЦ БЛОКА МОНТАЖ И СБОРКА*/
@@ -671,12 +718,6 @@ select {
 
 /*MEDIA*/
 
-@media (max-width: 1920px) and (min-width: 1760px) {
-    .step-son {
-        margin-right: 100px;
-    }
-}
-
 @media only screen and (max-width: 1700px) {
     .label h1 {
         font-size: 2.1em;
@@ -688,15 +729,12 @@ select {
 }
 
 @media (max-width: 1650px) {
+    .step {
+        height: calc(72vw * 0.469);
+    }
     .step-son {
         width: 80%;
         height: auto;
-    }
-    .step-son img {
-        width: 100%;
-    }
-    .arrow-down {
-        height: 600px;
     }
 }
 
@@ -762,21 +800,6 @@ select {
 }
 
 @media (max-width: 1200px) {
-    .step, .step-son, .arrow-down {
-        height: 500px;
-    }
-    .arrow-down {
-        margin-left: 20px;
-    }
-
-    .arrow-down.first-arrow {
-        margin-left: 30px;
-    }
-
-    .arrow-down.last-arrow {
-        height: 600px;
-        margin-left: 15px;
-    }
     .step-son img {
         height: auto;
     }
@@ -821,12 +844,37 @@ select {
         padding: 0 4%;
     }
 
-    .arrow-down {
-        display: none;
+    .step, .step-son {
+        height: calc(72vw * 0.473);
     }
 
-    .step, .step-son {
-        height: calc(72vw * 0.469);
+    .pointer {
+        width: 130px;
+    }
+
+    .arrow-block {
+        width: 40px;
+        left: 95px;
+        background-color: transparent;
+    }
+
+    .arrow-line::before {
+        width: 20px;
+        height: 20px;
+        left: 10px;
+    }
+
+    .arrow-line::after {
+        left: 10px;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 20px solid #70B570;
+    }
+
+    .round {
+        left: 105px;
+        width: 20px;
+        height: 20px;
     }
 
     .footer1, .footer2, .footer3 {
@@ -856,6 +904,18 @@ select {
     }
     .two-pics {
         margin-bottom: 50px;
+    }
+    .pointer {
+        width: 112px;
+    }
+    .arrow-block {
+        left: 72px;
+    }
+    .step p {
+        width: 67px;
+    }
+    .round {
+        left: 82px;
     }
 }
 
@@ -888,8 +948,10 @@ select {
         margin: 0 auto;
         float: none;
     }
+    .arrow-block, .round {
+        display: none;
+    }
     .step p {
-        float: none;
         text-align: center;
         margin-bottom: 30px;
     }
