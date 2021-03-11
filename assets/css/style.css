@@ -778,6 +778,9 @@ select {
     .footer1, .footer2 {
         padding: 20px;
     }
+    .bineo-table {
+        width: 700px;
+    }
 
 }
 
@@ -1016,6 +1019,14 @@ select {
     }
     .bineo-table {
         width: 319px;
+        font-size: 15px;
+        margin: 60px auto;
+    }
+    
+    td.bineo-tbl-grn {
+        min-width: 80px;
+    }
+
     }
     .second-none {
         display: none;
@@ -1077,7 +1088,7 @@ select {
         margin: 80px auto;
     }
 
-    .bineo-table, .calcul-area {
+    .calcul-area {
         margin: 60px auto;
     }
     
@@ -1094,18 +1105,6 @@ select {
     .partner img {
         max-width: 110px;
         min-height: 101px;
-    }
-}
-
-@media only screen and (max-width: 370px) {
-    .bineo-table {
-        width: 305px;
-        font-size: 12px;
-    }
-
-    td.bineo-tbl-grn {
-        min-width: 80px;
-        max-width: 80px;
     }
 }
 
