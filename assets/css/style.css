@@ -506,39 +506,6 @@ tr.bineo-tbl-grn td, td.bineo-tbl-grn {
 td.bineo-tbl-grn {
     min-width: 110px;
 }
-
-@media only screen and (max-width: 1050px) {
-  .bineo-table {
-    width: 800px;
-  }
-}
-@media only screen and (max-width: 810px) {
-    .bineo-table {
-      width: 500px;
-    }
-    .first-none {
-      display:none;
-    }
-}
-@media only screen and (max-width: 510px) {
-    .bineo-table {
-        width: 319px;
-    }
-    .second-none {
-        display: none;
-    }
-}
-@media only screen and (max-width: 370px) {
-    .bineo-table {
-        width: 305px;
-        font-size: 12px;
-    }
-
-    td.bineo-tbl-grn {
-        min-width: 80px;
-        max-width: 80px;
-    }
-}
 /*КОНЕЦ ТАБЛИЦЫ*/
 /*КАЛЬКУЛЯТОР*/
 .count {
@@ -917,6 +884,12 @@ select {
     .round {
         left: 82px;
     }
+    .bineo-table {
+      width: 500px;
+    }
+    .first-none {
+      display:none;
+    }
 }
 
 @media (max-width: 710px) {
@@ -999,33 +972,6 @@ select {
     }
 }
 
-@media (max-width: 999px) and (min-width: 617px) {
-    .table {
-        width: 617px;
-    }
-    .table td {
-        padding: 3px 8px;
-    }
-}
-@media (max-width: 616px) and (min-width: 415px) {
-    .table {
-        width: 415px;
-        overflow: hidden;
-    }
-    .xl65, .xl66, .none {
-        display: none;
-    }
-}
-@media (max-width: 414px) {
-    .table {
-        width: 309px;
-    }
-    
-    .xl65, .xl66, .none, .none2 {
-        display: none;
-    }
-}
-
 @media (max-width: 515px) {
     .label h1 {
         font-size: 20px;
@@ -1068,7 +1014,14 @@ select {
     #prev-btn p, #next-btn p {
         margin: 9px;
     }
+    .bineo-table {
+        width: 319px;
+    }
+    .second-none {
+        display: none;
+    }
 }
+
 @media (max-width: 500px) {
 
     .calcul-area {
@@ -1141,6 +1094,18 @@ select {
     .partner img {
         max-width: 110px;
         min-height: 101px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .bineo-table {
+        width: 305px;
+        font-size: 12px;
+    }
+
+    td.bineo-tbl-grn {
+        min-width: 80px;
+        max-width: 80px;
     }
 }
 
