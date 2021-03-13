@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru-ru">
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <link rel="apple-touch-icon" type="image/png" sizes="146x146" href="assets/img/icons/favicon.png">
-    <link rel="icon" type="image/png" sizes="146x146" href="assets/img/icons/favicon.png">
-    <link rel="shortcut icon" href="assets/img/icons/favicon.png">
-    <title>Автономная система канализации BiNeo</title>
-</head>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+        <link rel="apple-touch-icon" type="image/png" sizes="146x146" href="assets/img/icons/favicon.png">
+        <link rel="icon" type="image/png" sizes="146x146" href="assets/img/icons/favicon.png">
+        <link rel="shortcut icon" href="assets/img/icons/favicon.png">
+        <title>Автономная система канализации BiNeo</title>
+    </head>
 
-<body>
+    <body>
     <div class="top-line"></div>
     <section id="first">
         <div class="logo"><a href="http://ekoplast.com.ua/"><img src="assets/img/logo/bineo-header-logo.png"></a></div>
@@ -285,6 +285,5 @@
         <script src="assets/js/slider1.js"></script>
         <script src="assets/js/slider-op.js"></script>
         <script src="assets/js/calculator.js"></script>
-</body>
-
+    </body>
 </html>
