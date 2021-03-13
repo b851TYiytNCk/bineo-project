@@ -58,7 +58,6 @@ html, body, section {
 }
 .slider-box {
     width: 500px;
-    height: 300px;
     background: #fff;
     margin-top: 130px;
 }
@@ -83,7 +82,6 @@ html, body, section {
 
 #block-for-slider {
     width: 500px;
-    height: 300px;
     margin: 0;
 }
 
@@ -1027,13 +1025,19 @@ select {
         min-width: 80px;
     }
 
-    }
     .second-none {
         display: none;
     }
 }
 
 @media (max-width: 500px) {
+
+    .slide-img {
+        width: 100%;
+        height: auto;
+        min-height: unset;
+        max-height: 350px;
+    }
 
     .calcul-area {
         width: 100%;
@@ -1044,11 +1048,6 @@ select {
     }
     .slide {
         height: calc(100vw / 1.428);
-    }
-    .slide-img {
-        height: 100%;
-        min-height: unset;
-        max-height: 350px;
     }
 
     .two-pics {
@@ -1105,16 +1104,5 @@ select {
     .partner img {
         max-width: 110px;
         min-height: 101px;
-    }
-}
-
-@media (max-width: 350px) {
-    .leftArrow {
-        margin-top: 8%;
-        margin-left: 0;
-    }
-    .rightArrow {
-        margin-right: 0;
-        margin-top: 8%;
     }
 }
