@@ -210,26 +210,73 @@ html, body, section {
     margin-top: 100px;
 }
 
-.galleryContainer .slideShowContainer {
+.slideShowContainer {
   width:100%;
   height:100%;
   overflow: hidden;
 }
 
-.galleryContainer .slideShowContainer .slidie /*.imageHolder*/{
+.slidie /*.imageHolder*/{
     width: 100%;
     position: absolute;
     opacity: 0;
     transition: opacity 0.9s ease-in-out;
 }
-.galleryContainer .slideShowContainer .slidie:first-child {
+.slidie:first-child {
     opacity: 1;
 }
-.galleryContainer .slideShowContainer .slidie img{
+.slidie img, .slidie .slide-div{
     max-width: 1536px;
-    height: auto;
+    height: calc(80vw * 0.364);
     width: 80%;
     margin: 0 10%;
+}
+
+.slide-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide-point {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    background-color: #f7f7f7;
+    -webkit-box-shadow: 0px 0px 15px 5px rgb(0 0 0 / 20%);
+    -moz-box-shadow: 0px 0px 15px 5px rgb(0 0 0 / 20%);
+    box-shadow: 0px 0px 15px 5px rgb(0 0 0 / 20%);
+}
+
+.slide-point img {
+    width: 100px;
+    height: 100px;
+}
+
+.p-par {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    min-height: 100px;
+    max-width: 240px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    z-index: 999;
+}
+
+.p-par p {
+    width: 200px;
+    max-width: 200px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: #336633;
+    box-shadow: 0px 5px 10px -6px #000;
 }
 
 .nextPrevBtn {
@@ -244,106 +291,12 @@ html, body, section {
   z-index: 5;
 }
 
-.rightArrow {
-    margin-right: 6%;
-    margin-top: 11%;
-    right: 0;
-}
-.leftArrow {
-    margin-left: 6%;
-    margin-top: 11%;
-}
 .nextPrevBtn:hover {
   color: white;
 }
 
-#playPause a{
-  font-family: 'Roboto', sans-serif;
-  font-size: 1em;
-  position: absolute;
-  display: inline-block;
-  z-index: 5;
-  text-align: center;
-  margin: 20px auto;
-  width: 100%;
-  cursor: pointer;
-  color: grey;
-  transition: 0.6s ease;
-}
-
-#play {
-  opacity: 0;
-}
-
 a:hover {
   color: white;
-}
-
-.galleryContainer .moveLeftCurrentSlide{
-    animation-name: moveLeftCurrent;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-fill-mode:forwards;
-
-}
-.galleryContainer .moveLeftNextSlide{
-    animation-name: moveLeftNext;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-fill-mode:forwards;
-}
-@keyframes moveLeftCurrent {
-    from {margin-left: 0;opacity: 1;}
-    to {margin-left: -100%;opacity: 1;}
-}
-@keyframes moveLeftNext {
-    from {margin-left: 100%;opacity: 1;}
-    to {margin-left: 0%;opacity: 1;}
-}
-
-.galleryContainer .moveRightCurrentSlide{
-    animation-name: moveRightCurrent;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-fill-mode:forwards;
-}
-.galleryContainer .moveRightPrevSlide{
-    animation-name: moveRightPrev;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-fill-mode:forwards;
-}
-@keyframes moveRightCurrent {
-    from {margin-left: 0;opacity: 1;}
-    to {margin-left: 100%;opacity: 1;}
-}
-@keyframes moveRightPrev {
-    from {margin-left: -100%;opacity: 1;}
-    to {margin-left: 0%;opacity: 1;}
-}
-.galleryContainer .moveRightCurrentSlide{
-    animation-name: moveRightCurrent;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-fill-mode:forwards;
-}
-.galleryContainer .moveRightPrevSlide{
-    animation-name: moveRightPrev;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-fill-mode:forwards;
-}
-@keyframes moveRightCurrent {
-    from {margin-left: 0;opacity: 1;}
-    to {margin-left: 100%;opacity: 1;}
-}
-@keyframes moveRightPrev {
-    from {margin-left: -100%;opacity: 1;}
-    to {margin-left: 0%;opacity: 1;}
-}
-/* КОНЕЦ SLIDER 2*/
-#playPause {
-    display: none;
 }
 /*ЦЕНОВОЙ БЛОК*/
 .one-more p {
