@@ -216,7 +216,7 @@ html, body, section {
   overflow: hidden;
 }
 
-.slidie /*.imageHolder*/{
+.slidie {
     width: 100%;
     position: absolute;
     opacity: 0;
@@ -225,7 +225,8 @@ html, body, section {
 .slidie:first-child {
     opacity: 1;
 }
-.slidie img, .slidie .slide-div{
+
+.slidie .slide-div{
     max-width: 1536px;
     height: calc(80vw * 0.364);
     width: 80%;
@@ -242,8 +243,9 @@ html, body, section {
     width: 30%;
     height: 100%;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    padding-top: 50px;
     border-radius: 25px;
     background-color: #f7f7f7;
     -webkit-box-shadow: 0px 0px 15px 5px rgb(0 0 0 / 20%);
@@ -259,12 +261,14 @@ html, body, section {
 .p-par {
     display: flex;
     align-items: center;
-    height: 100px;
-    min-height: 100px;
+    height: 120px;
+    min-height: 120px;
     max-width: 240px;
-    padding: 20px;
+    padding: 30px 20px;
+    margin-top: 100px;
     border-radius: 10px;
     background-color: #fff;
+    box-shadow: 0px 5px 10px -6px #000;
     z-index: 999;
 }
 
@@ -276,7 +280,6 @@ html, body, section {
     font-weight: 600;
     text-align: center;
     color: #336633;
-    box-shadow: 0px 5px 10px -6px #000;
 }
 
 .nextPrevBtn {
