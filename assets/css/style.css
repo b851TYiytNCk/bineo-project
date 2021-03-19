@@ -282,22 +282,6 @@ html, body, section {
     color: #336633;
 }
 
-.nextPrevBtn {
-  font-size: 30px;
-  text-align: center;
-  color: grey;
-  cursor: pointer;
-  position: absolute;
-  width: auto;
-  padding: 10px;
-  transition: 0.6s ease;
-  z-index: 5;
-}
-
-.nextPrevBtn:hover {
-  color: white;
-}
-
 a:hover {
   color: white;
 }
@@ -470,7 +454,6 @@ td.bineo-tbl-grn {
     padding: 0 10%;
 }
 .calcul-area {
-    width: 500px;
     margin: 100px auto;
 }
 .box-calculator{
@@ -495,7 +478,6 @@ td.bineo-tbl-grn {
     text-align: center;
     color: #FFF;
     margin: 0 auto;
-    border: 0;
     border-radius: 3%;
     display: block;
     background-color: #70B570;
@@ -517,22 +499,17 @@ select {
     line-height: normal;
 }
 
-#block-block-3 #model-range {
+#model-range {
     height: 35px;
     padding-top: 0;
 }
 
-#block-block-3 #chelovek {
+#chelovek {
     padding: 10px 7px;
     height: 40px;
     vertical-align: middle;
-    background-color: #009942;
-    border: 3px solid #006616;
-    border-top: 0;
-    border-bottom: 1px dashed #00330c;
-    color: #fff;
 }
-#block-block-3 #field_price_stanok_value {
+#field_price_stanok_value {
 	padding: 15px 5px 0 5px;
 	display: block; 	 
 	height: 40px;
@@ -542,24 +519,22 @@ select {
     border-top: 0;
     color: #fff;
 }
-#block-block-3 #field_name_stanok_value {
+#field_name_stanok_value {
     padding: 15px 5px 0 5px;
     display: block; 
     height: 55px;
-    background-color: #009942;
-    border: 3px solid #006616;
-    border-top: 0;
-    border-bottom: 1px dashed #00330c;
-    color: #fff;
 }
-#block-block-3 #proizvoditelnost {
+#proizvoditelnost {
     padding: 10px 5px 0 5px;
     display: block; 
     height: 55px;
+}
+
+#proizvoditelnost, #field_name_stanok_value, #chelovek {
     background-color: #009942;
     border: 3px solid #006616;
-    border-top: 0;
     border-bottom: 1px dashed #00330c;
+    border-top: 0;
     color: #fff;
 }
 /*КОНЕЦ КАЛЬКУЛЯТОРА*/
@@ -818,6 +793,12 @@ select {
         padding: 40px 0;
         text-align: center;
     }
+
+    .p-par p {
+        width: 100px;
+        max-width: 100px;
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -858,15 +839,6 @@ select {
     }
     .first-none {
       display:none;
-    }
-}
-
-@media (max-width: 710px) {
-    .main-points {
-        height: 550px;
-    }
-    .nextPrevBtn {
-        font-size: 1rem;
     }
 }
 
@@ -916,6 +888,21 @@ select {
         clear: both;
         padding: 50px;
     }
+
+    .main-points {
+        height: 1600px;
+    }
+
+    .slide-div {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .slide-point {
+        width: 300px;
+        margin-bottom: 50px;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -954,9 +941,6 @@ select {
     }
     .green-box p {
         font-size: 14px; /*правило для нужно с 520 (+- 10) пикслей*/
-    }
-    .main-points {
-        height: 650px; /*правило для нужно с 520 (+- 10) пикслей*/
     }
     .slide-nav-btn {
         width: 15px;
@@ -1005,10 +989,6 @@ select {
         height: auto;
         min-height: unset;
         max-height: 350px;
-    }
-
-    .calcul-area {
-        width: 100%;
     }
     .description {
         grid: calc(100vw / 1.428) 650px / 100%;
